@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name = "addComputerName" value="ACE"/>
+  <parameter name = "addCompanyName" value="IBM"/>
+  <parameter name = "editComputerName" value="ACE1"/>
+   <parameter name = "editCompanyName" value="Sony"/>
+  <classes>
+     
+  <class name="com.computerproject.testcases.TC01_Add_ComputerName"/>
+ <class name="com.computerproject.testcases.TC02_Edit_ComputerName"/>
+     <class name="com.computerproject.testcases.TC03_Delete_ComputerName"/>
+     <class name="com.computerproject.testcases.TC01_JS_Alert"/>
+     <class name="com.computerproject.testcases.TC02_JS_Confirm"/>
+     <class name="com.computerproject.testcases.TC03_JS_Prompt"/>
+   
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
